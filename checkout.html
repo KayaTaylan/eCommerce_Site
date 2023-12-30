@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Your E-commerce Site</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Checkout Section -->
+        <section class="checkout-section">
+            <h2>Checkout</h2>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <!-- Display a summary of items in the shopping cart -->
+                <h3>Your Order</h3>
+                <!-- Sample product entry (repeat for each product in the cart) -->
+                <div class="order-item">
+                    <span>Product 1</span>
+                    <span>$19.99</span>
+                </div>
+                <!-- Repeat for other products -->
+                <div class="order-total">
+                    <span>Total:</span>
+                    <span>$XX.XX</span>
+                </div>
+            </div>
+
+            <!-- Customer Information and Payment Form -->
+            <div class="checkout-form">
+                <h3>Customer Information</h3>
+                <!-- Include form fields for customer details (name, address, etc.) -->
+                <form action="confirm_order.php" method="post">
+                    <!-- Sample fields (customize as needed) -->
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+
+                    <!-- Additional form fields for payment details (credit card, etc.) -->
+
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Your Logo</div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

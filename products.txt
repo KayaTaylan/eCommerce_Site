@@ -1,0 +1,5 @@
+5623, product1, 19.99$, images/product.jpg,
+7822, product2, 29.99$, images/product.jpg,
+4241, product3, 9.99$, images/product.jpg,
+8542, product4, 14.99$, images/product.jpg,
+1286, product5, 4.99$, images/product.jpg

@@ -1,0 +1,31 @@
+    <!-- Include this script in your HTML file -->
+<script>
+    // Fetch product data from the server
+    fetch('ajax.php')
+        .then(response => response.json())
+        .then(products => {
+            // Iterate through the products and create HTML elements
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card');
+
+                productCard.innerHTML = `
+                    <img src="${product.image_url}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <span>$${product.price}</span>
+                    <button onclick="addToCart(${product.id})">Add to Cart</button>
+                `;
+
+                // Append the product card to a container in your HTML
+                document.getElementById('product-container').appendChild(productCard);
+            });
+        })
+        .catch(error => console.error('Error fetching products:', error));
+
+    // Function to handle adding products to the cart
+    function addToCart(productId) {
+        // Implement your logic to add the product to the cart
+        console.log('Product added to cart:', productId);
+    }
+</script>
